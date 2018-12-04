@@ -30,7 +30,7 @@ async function getWeather(userLat, userLong) {
     "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
   console.log(iconScr);
   console.log(data);
-  // cityName.innerHTML = data.name;
+  cityName.innerHTML = data.name;
   description.innerHTML = data.weather[0].description;
   temperature.innerHTML = data.main.temp + " °c";
   icon.setAttribute("src", iconScr);

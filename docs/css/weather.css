@@ -2,7 +2,6 @@
   font-family: "Roboto", sans-serif; }
 
 #weatherContainer {
-  width: 25%;
   border: 1px solid grey;
   border-radius: 5px;
   display: flex;

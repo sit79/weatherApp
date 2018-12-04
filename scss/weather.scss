@@ -1,13 +1,12 @@
 * {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 #weatherContainer {
-  width: 25%;
-  border: 1px solid grey;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: right;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
 }
