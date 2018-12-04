@@ -16,4 +16,5 @@ Thumbs.db
 
 # SASS cache folder #
 #####################
-/.sass-cache
+.*
+!/.gitignore
