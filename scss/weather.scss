@@ -1,12 +1,39 @@
-* {
-    font-family: "Roboto", sans-serif;
+@import "mixins";
+@import "fontsAndColors";
+#weatherWrapper {
+  @include visibleBorder(1px, lightgrey);
+  width: 30%;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-rows: 1fr 2fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background: #d6dbdb;
 }
 
-#weatherContainer {
-    border: 1px solid grey;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: right;
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-item {
+  padding: 5px;
+  /* @include visibleBorder(1px, darkgrey); */
+}
+
+.a {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.b {
+  grid-column: 2/ 3;
+  grid-row: 1 / 3;
+  padding: 18px;
+}
+
+.c {
+  grid-column: 1/ 2;
+  grid-row: 2 / 3;
 }

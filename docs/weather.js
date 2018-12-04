@@ -2,7 +2,7 @@ var key = "ccf31ad40fb6d05a1f40b2802a01eada";
 var cityName = document.getElementById("cityName");
 var description = document.getElementById("description");
 var temperature = document.getElementById("temperature");
-var icon = document.getElementById("icon");
+var icon = document.getElementById("weatherIcon");
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -28,11 +28,9 @@ async function getWeather(userLat, userLong) {
   let data = await raw.json();
   let iconScr =
     "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-  console.log(iconScr);
-  console.log(data);
-  cityName.innerHTML = data.name;
+  // cityName.innerHTML = data.name;
   description.innerHTML = data.weather[0].description;
-  temperature.innerHTML = data.main.temp + " °c";
+  temperature.innerHTML = data.main.temp + "° c";
   icon.setAttribute("src", iconScr);
 }
 
